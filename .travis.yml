@@ -3,7 +3,7 @@ services:
     - docker
 
 before_install:
-    - docker build -t tahifaMed/docker-react -f Dockerfile.dev .
+    - docker build -t tahifaMed/docker-react -f DockerFile.dev .
 
 script:
     - docker run tahifaMed/docker-react npm run test -- --coverage
