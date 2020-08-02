@@ -6,4 +6,4 @@ before_install:
     - docker build -t tahifamed/docker-react -f DockerFile.dev .
 
 script:
-    - docker run tahifamed/docker-react npm run test -- --coverage
+    - docker run CI=true tahifamed/docker-react npm run test
